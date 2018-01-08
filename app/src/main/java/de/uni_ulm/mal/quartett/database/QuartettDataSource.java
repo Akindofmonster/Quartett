@@ -165,7 +165,7 @@ public class QuartettDataSource {
     return category;
   }
 
-  private Gamemode cursorTo(Cursor cursor) {
+  /*private Gamemode cursorTo(Cursor cursor) {
     int idID = cursor.getColumnIndex(QuartettDbHelper.columns[]);
     int idName = cursor.getColumnIndex(QuartettDbHelper.columns[]);
     int idRoundCount = cursor.getColumnIndex(QuartettDbHelper.columns[]);
@@ -200,7 +200,7 @@ public class QuartettDataSource {
     Settings setting = new Settings(musikVolume, sfxVolume, notification, vibration, soonEnding);
 
     return setting;
-  }
+  }*/
 
 
 
