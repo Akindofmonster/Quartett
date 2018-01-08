@@ -19,6 +19,7 @@ import java.util.ListIterator;
 
 import de.uni_ulm.mal.quartett.MainActivity;
 import de.uni_ulm.mal.quartett.data.Category;
+import de.uni_ulm.mal.quartett.data.Gamemode;
 import de.uni_ulm.mal.quartett.data.Settings;
 
 
@@ -162,6 +163,43 @@ public class QuartettDataSource {
     Category category = new Category(id, name, minAttribute, maxAttribute);
 
     return category;
+  }
+
+  private Gamemode cursorTo(Cursor cursor) {
+    int idID = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+    int idName = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+    int idRoundCount = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+    int idCartCount = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+    int idWinCondition = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+    int id = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+    int id = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+    int id = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+
+    int = cursor.getInt(id);
+
+    Gamemode setting = new Gamemode();
+
+    return setting;
+  }
+
+  private Settings cursorTo(Cursor cursor) {
+    int id = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+
+    int = cursor.getInt(id);
+
+    Settings setting = new Settings(musikVolume, sfxVolume, notification, vibration, soonEnding);
+
+    return setting;
+  }
+
+  private Settings cursorTo(Cursor cursor) {
+    int id = cursor.getColumnIndex(QuartettDbHelper.columns[]);
+
+    int = cursor.getInt(id);
+
+    Settings setting = new Settings(musikVolume, sfxVolume, notification, vibration, soonEnding);
+
+    return setting;
   }
 
 
