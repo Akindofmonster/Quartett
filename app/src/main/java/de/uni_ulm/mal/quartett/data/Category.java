@@ -1,5 +1,6 @@
 package de.uni_ulm.mal.quartett.data;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.jar.Attributes;
 
@@ -11,10 +12,10 @@ public class Category {
 
   private int id;
   private String name;
-  private List<Integer> minAttribute;
-  private List<Integer> maxAttribute;
+  private ArrayList<Integer> minAttribute;
+  private ArrayList<Integer> maxAttribute;
 
-  public Category(int id, String name, List<Integer> minAttribute, List<Integer> maxAttribute) {
+  public Category(int id, String name, ArrayList<Integer> minAttribute, ArrayList<Integer> maxAttribute) {
     this.id = id;
     this.name = name;
     this.minAttribute = minAttribute;
@@ -41,7 +42,7 @@ public class Category {
     return minAttribute;
   }
 
-  public void setMinAttribute(List<Integer> minAttribute) {
+  public void setMinAttribute(ArrayList<Integer> minAttribute) {
     this.minAttribute = minAttribute;
   }
 
@@ -49,7 +50,7 @@ public class Category {
     return maxAttribute;
   }
 
-  public void setMaxAttribute(List<Integer> maxAttribute) {
+  public void setMaxAttribute(ArrayList<Integer> maxAttribute) {
     this.maxAttribute = maxAttribute;
   }
 }
