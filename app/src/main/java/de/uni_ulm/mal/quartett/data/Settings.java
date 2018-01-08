@@ -4,7 +4,7 @@ package de.uni_ulm.mal.quartett.data;
  * Created by olive on 07.01.2018.
  */
 
-public class setting {
+public class Settings {
 
   private int music_volume;
   private int sound_volume;
@@ -12,7 +12,7 @@ public class setting {
   private boolean vibration;
   private boolean soon_ending_message;
 
-  public setting(int music_volume, int sound_volume, boolean notification, boolean vibration, boolean soon_ending_message) {
+  public Settings(int music_volume, int sound_volume, boolean notification, boolean vibration, boolean soon_ending_message) {
     this.music_volume = music_volume;
     this.sound_volume = sound_volume;
     this.notification = notification;

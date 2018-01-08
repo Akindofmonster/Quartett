@@ -4,7 +4,7 @@ package de.uni_ulm.mal.quartett.data;
  * Created by olive on 07.01.2018.
  */
 
-public class game {
+public class Game {
 
   private int id;
   private int drawRounds;
@@ -16,7 +16,7 @@ public class game {
   private boolean ki;
   private int gamemode;
 
-  public game(int id, int drawRounds, int winRounds, int lostRounds, int numberOfCards, int enemyNumberOfCards, int startTimeRound, boolean ki, int gamemode) {
+  public Game(int id, int drawRounds, int winRounds, int lostRounds, int numberOfCards, int enemyNumberOfCards, int startTimeRound, boolean ki, int gamemode) {
     this.id = id;
     this.drawRounds = drawRounds;
     this.winRounds = winRounds;
