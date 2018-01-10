@@ -14,9 +14,9 @@ public class Game {
   private int enemyNumberOfCards;
   private int startTimeRound;
   private boolean ki;
-  private int gamemode;
+  private GameMode gameMode;
 
-  public Game(int id, int drawRounds, int winRounds, int lostRounds, int numberOfCards, int enemyNumberOfCards, int startTimeRound, boolean ki, int gamemode) {
+  public Game(int id, int drawRounds, int winRounds, int lostRounds, int numberOfCards, int enemyNumberOfCards, int startTimeRound, boolean ki, GameMode gameMode) {
     this.id = id;
     this.drawRounds = drawRounds;
     this.winRounds = winRounds;
@@ -25,7 +25,7 @@ public class Game {
     this.enemyNumberOfCards = enemyNumberOfCards;
     this.startTimeRound = startTimeRound;
     this.ki = ki;
-    this.gamemode = gamemode;
+    this.gameMode = gameMode;
   }
 
   public int getId() {
@@ -92,12 +92,12 @@ public class Game {
     this.ki = ki;
   }
 
-  public int getGamemode() {
-    return gamemode;
+  public GameMode getGameMode() {
+    return gameMode;
   }
 
-  public void setGamemode(int gamemode) {
-    this.gamemode = gamemode;
+  public void setGameMode(GameMode gameMode) {
+    this.gameMode = gameMode;
   }
 
 

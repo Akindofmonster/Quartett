@@ -41,10 +41,10 @@ public class QuartettDbHelper extends SQLiteOpenHelper {
           "id", "kategorie", "name", "bild"
   };
   public static final String[] columnsAttribute = {
-          "id", "wert", "position", "karten_attribut"
+          "id", "wert", "karten_attribut", "karte"
   };
   public static final String[] columnsCardAttribute = {
-          "id", "name", "größer_kleiner", "einheit", "karte"
+          "id", "name", "größer", "einheit", "position"
   };
 
   public String SQL_CREATE;

@@ -4,7 +4,7 @@ package de.uni_ulm.mal.quartett.data;
  * Created by olive on 07.01.2018.
  */
 
-public class Gamemode {
+public class GameMode {
 
   private int id;
   private String name;
@@ -15,7 +15,7 @@ public class Gamemode {
   private String order;
   private Category category;
 
-  public Gamemode(int id, String name, int roundCount, int cardCount, String winCondition, int roundLength, String order, Category category) {
+  public GameMode(int id, String name, int roundCount, int cardCount, String winCondition, int roundLength, String order, Category category) {
     this.id = id;
     this.name = name;
     this.roundCount = roundCount;
